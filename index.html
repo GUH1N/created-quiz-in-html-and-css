@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose the option</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>In Web design, What does CSS stands for?</h2>
+        <div class="option">
+            <div class="option1" > <button onclick="wrong1()">A</button><p>Counter Strike Source</p></div>
+            <div class="option2"> <button onclick="wrong2()">B</button><p>Corrective Style Sheet</p></div>
+            <div class="option3"> <button onclick="wrong3()">C</button><p>Computer Style Sheet</p></div>
+            <div class="option4"> <button onclick="correct()">D</button><p>Cascading Style Sheet</p></div>
+        </div>
+    </div>
+    <script>
+        function wrong1(){
+            document.getElementsByClassName("option1")[0].style.backgroundColor='red';
+        }
+        function wrong2(){
+            document.getElementsByClassName("option2")[0].style.backgroundColor='red';
+        }
+        function wrong3(){
+            document.getElementsByClassName("option3")[0].style.backgroundColor='red';
+        }
+        function correct(){
+            document.getElementsByClassName("option4")[0].style.backgroundColor='green'
+        }
+        // function check() {
+        //     let options = document.getElementsByClassName('option');
+        //     alert(options)
+        //     if (options == "op1" || options == "op2" || options == "op3") {
+        //         document.getElementsByClassName(options)[0].style.backgroundColor = 'red';
+        //     } else {
+        //         document.getElementsByClassName(options)[0].style.backgroundColor = 'green';
+        //     }
+        // }
+    </script>
+</body>
+</html>
